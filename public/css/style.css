@@ -19,12 +19,10 @@
        margin-top: 17rem
     }
 
-    .navbar {
-       background-color: rgb(206, 135, 192);
-
-
-
-    }
+    /* .navbar {
+       background-color: #3c9b63;
+       color: white; 
+     } */
 
     #text {
        font-weight: bold;
@@ -42,7 +40,7 @@
     
     /* signup css */
     body {
-      background-color: #F5F5F5;
+      background-color: #ffffff;
     }
     .hero {
       background-color: #32e48b;

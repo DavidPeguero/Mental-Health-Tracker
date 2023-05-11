@@ -105,3 +105,23 @@ function updateQuestions() {
 
 // Call the functions when the page loads
 updateQuestions();
+
+// get references to the checklist and completed sections
+const checklistSection = document.getElementById("checklist-section");
+const completedSection = document.getElementById("completed-section");
+
+// add a submit event listener to the form
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  // get the current date
+  const today = new Date();
+  const dateString = today.toLocaleDateString();
+
+  // show the completed section and hide the checklist section
+  checklistSection.style.display = "none";
+  completedSection.style.display = "block";
+
+  // set the completed date in the completed section
+  document.getElementById("completed-date").textContent = dateString;
+});
